@@ -1,3 +1,8 @@
+/*
+Nombre: code.js
+Version: 1.0
+Autor: Angie p.
+ */
 
 let play = document.getElementById("btn");
 let reset = document.getElementById("reset");
@@ -15,6 +20,7 @@ let gana = 0;
 let pierde = 0;
 let suma = 0;
 
+/*Funcion Jugar para ejecutar el juego */
 function Jugar() {
 
     let apuesta = document.getElementById("valor").value;
@@ -63,9 +69,9 @@ function Jugar() {
 
     resu.innerHTML = `<div class="resul">
     <h2 class="cont-titulo">Resultados</h2>
-    <p>Las partidas jugadas fueron ${cont}, <br> 
-    Dinero Inicial ${apuesta}<br> 
-    Dinero acumulado ${suma} </p>
+    <p>Las partidas jugadas fueron ${cont}</p> <br> 
+    <p>Dinero Inicial ${apuesta}</p><br> 
+    <p>Dinero acumulado ${suma} </p>
     </div>`
 
     gano.innerHTML = `<p>${gana}</p>`;
@@ -78,6 +84,7 @@ function Jugar() {
 
 play.addEventListener('click', Jugar);
 
+/*Funcion recargar para borrar la informacion del juego */
 function recargar() {
 
     resu.innerHTML = ``;

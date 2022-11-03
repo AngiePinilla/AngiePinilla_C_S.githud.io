@@ -16,42 +16,46 @@
             <h2 class="titulo">Juego Cara y sello</h2>
         </div>
     </section>
-    <section class="moneda">
-        <div class="card">
-            <div class="front">
-                <img class="img-m" src="img/cara.png" alt="Cara">
+    <div class="divi">
+        <section class="moneda">
+            <div class="card">
+                <div class="front">
+                    <img class="img-m" src="img/cara.png" alt="Cara">
+                </div>
+                <div class="back">
+                    <img class="img-m" src="img/sello.png" alt="Sello">
+                </div>
             </div>
-            <div class="back">
-                <img class="img-m" src="img/sello.png" alt="Sello">
-            </div>
-        </div>
-        
-    </section>
-    <section class="contadores">
-        <div class="contador">
-            <div class="cont">
-                <h4 class="cont-text">Partidas Ganadas</h4>
-                <div class="c1" id="cont-gano"></div>
-            </div>
-            <div class="cont">
-                <h4 class="cont-text">Partidas Perdidas</h4>
-                <div class="c1" id="cont-perdio"></div>
-            </div>
-        </div>
-        <div class="presu" id="priresu">
-        </div>
-    </section>
-    <section class="contenido">
-        <form action="" method="post">
-            <div class="valor">
-                <h2 class="cont-titulo">Apuesta</h2>
+
+            <section class="contadores">
+                <div class="contador">
+                    <div class="cont">
+                        <h4 class="cont-text">Partidas Ganadas</h4>
+                        <div class="c1" id="cont-gano"></div>
+                    </div>
+                    <div class="cont">
+                        <h4 class="cont-text">Partidas Perdidas</h4>
+                        <div class="c1" id="cont-perdio"></div>
+                    </div>
+                </div>
+                <div class="presu" id="priresu">
+                </div>
+            </section>
+
+        </section>
+
+        <section class="contenido">
+
+            <form action="" method="post">
+                <div class="valor">
+                    <h2 class="cont-titulo">Apuesta</h2>
                     <div class="form">
                         <label class="cont-label">Cuanto desea apostar</label>
                         <input class="cont-input" type="number" name="valor" id="valor" required>
                     </div>
-            </div>
-            <div class="seleccion">
-                <h2 class="cont-titulo">Seleccione Cara o Sello</h2>
+                </div>
+                <div class="seleccion">
+                    <h2 class="cont-titulo">Seleccione Cara o Sello</h2>
                     <!-- <div class="monedas">
                         <div class="mon1"  id="monedas">
                             <img class="img-mon1" src="img/cara.png" alt="Cara">
@@ -75,15 +79,16 @@
                     </div>
                     <div class="resultados" id="resultados">
                     </div>
-                    
+
                     <div class="boton">
                         <input class="btn" type="button" value="Jugar" id="btn">
                         <input class="btn" type="reset" value="Finalizar Juego" id="reset">
                         <!-- <button id="volver" value="true">Volver a jugar</button> -->
                     </div>
-            </div>
-        </form>
-    </section>
+                </div>
+            </form>
+        </section>
+    </div>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="sweetalert2.all.min.js"></script>

@@ -15,7 +15,7 @@ body {
     flex-direction: column;
 }
 
-
+/* animacion moneda */
 
 .card {
     position: relative;
@@ -55,8 +55,11 @@ body {
     transform: perspective(500px) rotateY(360deg);
 }
 
+/* contenido */
+
 .contenido {
     display: flex;
+    flex-direction: column;
     padding: 1em;
 }
 
@@ -70,6 +73,8 @@ body {
 
     text-align: center;
 }
+
+/* formulario */
 
 .valor {
     display: flex;
@@ -197,7 +202,13 @@ option {
     color: #fff;
 }
 
-@media (min-width:320px) {
+.divi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media  (min-width:320px) {
     .seleccion .boton {
         display: flex;
         align-items: center;
@@ -205,9 +216,11 @@ option {
         margin-bottom: 3em;
     }
 
+   
+
     /* .cont{
         width: 0;
     } */
 
-    
+
 }

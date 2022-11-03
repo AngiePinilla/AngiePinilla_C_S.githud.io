@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Moneda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="cabecera">
+        <div class="titulo">
+            <h2 class="titulo">Juego Cara y sello</h2>
+        </div>
+    </section>
+    <section class="moneda">
+        <div class="card">
+            <div class="front">
+                <img class="img-m" src="img/cara.png" alt="Cara">
+            </div>
+            <div class="back">
+                <img class="img-m" src="img/sello.png" alt="Sello">
+            </div>
+        </div>
+        
+    </section>
+    <section class="contadores">
+        <div class="contador">
+            <div class="cont">
+                <h4 class="cont-text">Partidas Ganadas</h4>
+                <div class="c1" id="cont-gano"></div>
+            </div>
+            <div class="cont">
+                <h4 class="cont-text">Partidas Perdidas</h4>
+                <div class="c1" id="cont-perdio"></div>
+            </div>
+        </div>
+        <div class="presu" id="priresu">
+        </div>
+    </section>
+    <section class="contenido">
+        <form action="" method="post">
+            <div class="valor">
+                <h2 class="cont-titulo">Apuesta</h2>
+                    <div class="form">
+                        <label class="cont-label">Cuanto desea apostar</label>
+                        <input class="cont-input" type="number" name="valor" id="valor" required>
+                    </div>
+            </div>
+            <div class="seleccion">
+                <h2 class="cont-titulo">Seleccione Cara o Sello</h2>
+                    <!-- <div class="monedas">
+                        <div class="mon1"  id="monedas">
+                            <img class="img-mon1" src="img/cara.png" alt="Cara">
+                            <h3 class="mon-text">Cara</h3>
+                            <input type="radio" class="opc" id="radio" value="1">
+                        </div>
+                        <div class="mon1" >
+                            <img class="img-mon1" src="img/sello.png" alt="Sello">
+                            <h3 class="mon-text">Sello</h3>
+                            <input type="radio" class="opc" id="radio" value="2">
+                        </div>
+                        
+                    </div> -->
+                    <div class="cont-opciones">
+
+                        <select class="opciones" id="opc">
+                            <option value="0">Seleccionar</option>
+                            <option value="1">Cara</option>
+                            <option value="2">Sello</option>
+                        </select>
+                    </div>
+                    <div class="resultados" id="resultados">
+                    </div>
+                    
+                    <div class="boton">
+                        <input class="btn" type="button" value="Jugar" id="btn">
+                        <input class="btn" type="reset" value="Finalizar Juego" id="reset">
+                        <!-- <button id="volver" value="true">Volver a jugar</button> -->
+                    </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="code.js"></script>
+
+</body>
+
+</html>

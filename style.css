@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    background: rgb(253, 250, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.card {
+    position: relative;
+    width: 20em;
+    height: 20em;
+}
+
+.card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.img-m {
+    width: 80%;
+}
+
+
+.card .front {
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card .back {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.contenido {
+    display: flex;
+    padding: 1em;
+}
+
+.contadores .contador {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.cont .c1 {
+
+    text-align: center;
+}
+
+.valor {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+
+}
+
+.valor .form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.form .cont-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    margin: 0 0 12px 0;
+}
+
+.cont-text {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(226, 148, 3);
+    /* width: 50%; */
+}
+
+.cont {
+    width: 30%;
+}
+
+.titulo {
+    align-self: center;
+    font-family: 'Secular One', sans-serif;
+    margin: 0.5em 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: hsl(32, 48%, 51%);
+}
+
+.cont-titulo {
+    align-self: center;
+    font-family: 'Secular One', sans-serif;
+    margin: 0.5em 0;
+    color: rgb(138, 85, 43);
+    text-align: center;
+}
+
+.opciones {
+    margin: 1.2em 0;
+    width: 100%;
+}
+
+.seleccion {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultados {
+    margin: 1em 0;
+}
+
+.resultados .resul {
+    display: flex;
+    flex-direction: column;
+}
+
+p,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(138, 85, 43);
+}
+
+input,
+select,
+option {
+    border-radius: 5px;
+    border-color: hsl(25, 75%, 47%);
+    padding: 5px;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.seleccion .monedas {
+    display: flex;
+    flex-direction: row;
+}
+
+.monedas .mon1 .img-mon1 {
+    width: 65%;
+}
+
+.monedas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.monedas .mon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seleccion .boton {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+.boton .btn {
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.boton .btn:hover {
+    background-color: rgb(231, 148, 39);
+    color: #fff;
+}
+
+@media (min-width:320px) {
+    .seleccion .boton {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 3em;
+    }
+
+    /* .cont{
+        width: 0;
+    } */
+
+    
+}

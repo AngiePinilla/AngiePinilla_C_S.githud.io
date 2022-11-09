@@ -19,7 +19,7 @@ let cont = 0;
 let gana = 0;
 let pierde = 0;
 let suma = 0;
-
+let r , o;
 /*Funcion Jugar para ejecutar el juego */
 function Jugar() {
 
@@ -44,6 +44,18 @@ function Jugar() {
         let alt = 1 + (parseInt(Math.random() * 2));
         console.log(`alt ${alt}`)
 
+        if (alt == 1) {
+            r = "Cara";
+        } else {
+            r = "Sello";
+        }
+
+        if (opcion == 1) {
+            o = "Cara";
+        } else {
+            o = "Sello";
+        }
+
         if (opcion == alt) {
 
             suma = suma + apuesta;
@@ -52,15 +64,21 @@ function Jugar() {
             // alert(`Gano apuesta: ${apuesta}, contador:${cont}`)
 
             prim.innerHTML = `<div><h6>¡Felicitaciones! Ganaste</h6>
-            <p>El dinero obtenido es : ${suma}</p></div>`;
+            <p>El dinero obtenido es : ${suma}</p>
+            <p>Elegiste : ${o}</p>
+            <p>Y salio : ${r}</p></div>`;
 
         } else if (opcion != alt) {
             suma = suma - apuesta;
             cont = cont + 1;
             pierde = pierde + 1;
             prim.innerHTML = `<div><h6>Lo sentimos, Perdiste :c</h6>
-            <p>El dinero obtenido es : ${suma}</p></div>`;
+            <p>El dinero obtenido es : ${suma}</p>
+            <p>Elegiste : ${o}</p>
+            <p>Y salio : ${r}</p></div>`;
         } 
+
+        
         
 
         seguir = false;
